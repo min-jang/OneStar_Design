@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnkleDesign">
+
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:background="#5A1807"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/share"
+    />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="139dp"
+        android:layout_height="59dp"
+        android:background="#5A1807"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shareButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/accountButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/untitled_1" />
+
+    <ImageButton
+        android:id="@+id/accountButton"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:background="#5A1807"
+        android:contentDescription="TODO"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/AFOpreview"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo" />
+
+    <Button
+        android:id="@+id/colorButton"
+        android:layout_width="412dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/teal_200"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="Color"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/patternButton"
+        android:layout_width="412dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/teal_200"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="Pattern"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/colorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="84dp"
+        android:layout_height="43dp"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/AFOpreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <ImageButton
+        android:id="@+id/pattern1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@drawable/swatch1" />
+
+    <ImageButton
+        android:id="@+id/pattern2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toStartOf="@+id/pattern3"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toEndOf="@+id/pattern1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@drawable/swatch2" />
+
+    <ImageButton
+        android:id="@+id/pattern3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@drawable/swatch3" />
+
+    <ImageButton
+        android:id="@+id/pattern4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toStartOf="@+id/pattern5"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toEndOf="@+id/pattern3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@drawable/swatch5" />
+
+    <ImageButton
+        android:id="@+id/pattern5"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.699"
+        app:srcCompat="@drawable/swatch6" />
+
+    <ImageButton
+        android:id="@+id/pattern6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton"
+        app:layout_constraintEnd_toStartOf="@+id/pattern7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pattern1"
+        app:layout_constraintVertical_bias="0.317"
+        app:srcCompat="@drawable/swatch7" />
+
+    <ImageButton
+        android:id="@+id/pattern7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton"
+        app:layout_constraintEnd_toStartOf="@+id/pattern8"
+        app:layout_constraintTop_toBottomOf="@+id/pattern2"
+        app:layout_constraintVertical_bias="0.455"
+        app:srcCompat="@drawable/swatch8" />
+
+    <ImageButton
+        android:id="@+id/pattern8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pattern3"
+        app:srcCompat="@drawable/swatch9" />
+
+    <ImageButton
+        android:id="@+id/pattern9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toStartOf="@+id/pattern10"
+        app:layout_constraintTop_toBottomOf="@+id/pattern4"
+        app:layout_constraintVertical_bias="0.455"
+        app:srcCompat="@drawable/swatch10" />
+
+    <ImageButton
+        android:id="@+id/pattern10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pattern5"
+        app:layout_constraintVertical_bias="0.488"
+        app:srcCompat="@drawable/swatch12" />
+
+    <ImageView
+        android:id="@+id/AFO_P1"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo1" />
+
+    <ImageView
+        android:id="@+id/AFO_P2"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo2" />
+
+    <ImageView
+        android:id="@+id/AFO_P3"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo3" />
+
+    <ImageView
+        android:id="@+id/AFO_P4"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo4" />
+
+
+    <ImageView
+        android:id="@+id/AFO_P5"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo5" />
+
+    <ImageView
+        android:id="@+id/AFO_P6"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo6" />
+
+    <ImageView
+        android:id="@+id/AFO_P7"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo7" />
+
+    <ImageView
+        android:id="@+id/AFO_P8"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo8" />
+
+    <ImageView
+        android:id="@+id/AFO_P9"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo9" />
+
+    <ImageView
+        android:id="@+id/AFO_P10"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo10" />
+
+    <ImageButton
+        android:id="@+id/color1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/color1" />
+
+    <ImageButton
+        android:id="@+id/color2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toStartOf="@+id/color3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/color1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/color2" />
+
+    <ImageButton
+        android:id="@+id/color3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/color3" />
+
+    <ImageButton
+        android:id="@+id/color4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toStartOf="@+id/color5"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toEndOf="@+id/color3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/color4" />
+
+    <ImageButton
+        android:id="@+id/color5"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.660"
+        app:srcCompat="@drawable/color5" />
+
+    <ImageButton
+        android:id="@+id/color6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton"
+        app:layout_constraintEnd_toStartOf="@+id/color7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/color6" />
+
+    <ImageButton
+        android:id="@+id/color7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton"
+        app:layout_constraintEnd_toStartOf="@+id/color8"
+        app:layout_constraintTop_toBottomOf="@+id/color2"
+        app:layout_constraintVertical_bias="0.155"
+        app:srcCompat="@drawable/color7" />
+
+    <ImageButton
+        android:id="@+id/color8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color3"
+        app:layout_constraintVertical_bias="0.155"
+        app:srcCompat="@drawable/color8" />
+
+    <ImageButton
+        android:id="@+id/color9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toStartOf="@+id/color10"
+        app:layout_constraintTop_toBottomOf="@+id/color4"
+        app:layout_constraintVertical_bias="0.155"
+        app:srcCompat="@drawable/color9" />
+
+    <ImageButton
+        android:id="@+id/color10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color5"
+        app:layout_constraintVertical_bias="0.155"
+        app:srcCompat="@drawable/color10" />
+
+    <ImageButton
+        android:id="@+id/color11"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton"
+        app:layout_constraintEnd_toStartOf="@+id/color8"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color6"
+        app:layout_constraintVertical_bias="0.809"
+        app:srcCompat="@drawable/color11" />
+
+    <ImageButton
+        android:id="@+id/color12"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountButton"
+        app:layout_constraintEnd_toStartOf="@+id/color11"
+        app:layout_constraintTop_toBottomOf="@+id/color7"
+        app:layout_constraintVertical_bias="0.809"
+        app:srcCompat="@drawable/color12" />
+
+    <ImageButton
+        android:id="@+id/color13"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color8"
+        app:layout_constraintVertical_bias="0.809"
+        app:srcCompat="@drawable/color13" />
+
+    <ImageButton
+        android:id="@+id/color14"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintStart_toEndOf="@+id/color13"
+        app:layout_constraintTop_toBottomOf="@+id/color9"
+        app:layout_constraintVertical_bias="0.809"
+        app:srcCompat="@drawable/color14" />
+
+    <ImageButton
+        android:id="@+id/color15"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/color14"
+        app:layout_constraintTop_toBottomOf="@+id/color10"
+        app:layout_constraintVertical_bias="0.809"
+        app:srcCompat="@drawable/color15" />
+
+    <ImageView
+        android:id="@+id/AFO_C1"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors1" />
+
+    <ImageView
+        android:id="@+id/AFO_C2"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors2" />
+
+    <ImageView
+        android:id="@+id/AFO_C3"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors3" />
+
+    <ImageView
+        android:id="@+id/AFO_C4"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors4" />
+
+
+    <ImageView
+        android:id="@+id/AFO_C5"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors5" />
+
+    <ImageView
+        android:id="@+id/AFO_C6"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors6" />
+
+    <ImageView
+        android:id="@+id/AFO_C7"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors7" />
+
+    <ImageView
+        android:id="@+id/AFO_C8"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors8" />
+
+    <ImageView
+        android:id="@+id/AFO_C9"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors9" />
+
+    <ImageView
+        android:id="@+id/AFO_C10"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors10" />
+
+    <ImageView
+        android:id="@+id/AFO_C11"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors11" />
+
+    <ImageView
+        android:id="@+id/AFO_C12"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors12" />
+
+    <ImageView
+        android:id="@+id/AFO_C13"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors13" />
+
+    <ImageView
+        android:id="@+id/AFO_C14"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors14" />
+
+    <ImageView
+        android:id="@+id/AFO_C15"
+        android:layout_width="317dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/patternButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ankle_afo_colors15" />
+
+    <Button
+        android:id="@+id/changeCbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        app:layout_constraintBottom_toTopOf="@+id/AFOpreview"
+        app:layout_constraintEnd_toStartOf="@+id/save"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/changePbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pattern"
+        app:layout_constraintBottom_toTopOf="@+id/AFOpreview"
+        app:layout_constraintEnd_toStartOf="@+id/save"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>

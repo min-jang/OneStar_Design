@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="205dp"
+        android:layout_height="61dp"
+        android:background="#5A1807"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/share" />
+
+    <ImageButton
+        android:id="@+id/accountButton"
+        android:layout_width="205dp"
+        android:layout_height="61dp"
+        android:background="#5A1807"
+        android:contentDescription="TODO"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/Choose_Text"
+        android:layout_width="314dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/montserrat_alternates_bold"
+        android:text="Choose your own design"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <ImageButton
+        android:id="@+id/wristButton"
+        android:layout_width="255dp"
+        android:layout_height="213dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/wrist_imagebutton"
+        android:src="@drawable/wrist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ankleButton"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <ImageButton
+        android:id="@+id/ankleButton"
+        android:layout_width="255dp"
+        android:layout_height="213dp"
+        android:background="@drawable/ankle_imagebutton"
+        android:src="@drawable/ankle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Choose_Text" />
+
+</android.support.constraint.ConstraintLayout>
